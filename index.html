@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery Studio</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="img/sara glass.jpg" alt="Sarah Glass Logo" style="height: 40px;">
+            </a>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: black;">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: black;">Private Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: black;">Gift Cards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: black;">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: black;">Shop</a></li>
+                </ul>
+            </div>
+
+            <!-- Icons and Dark Mode Button -->
+            <div class="navbar-icons ms-auto d-flex align-items-center">
+                <a href="#" class="me-3 text-black"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="me-3 text-black"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="me-3 text-black"><i class="fa-regular fa-user"></i></a>
+                <!-- Dark Mode Button -->
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex justify-content-start align-items-center" style="background-image: url('img/ceramic4.jpg'); height: 80vh; background-size: cover; background-position: center;">
+        <div class="hero-text d-flex flex-column justify-content-center align-items-start" style="margin-left: 30px; max-width: 30%; background-color: rgba(0, 0, 0, 0); padding: 20px; border-radius: 10px;">
+            <h1 class="display-4 text-white">A pottery studio dedicated to creativity and community.</h1>
+            <button class="btn btn-dark mt-3" style="border-radius: 20px;">Take a class</button>
+        </div>
+    </section>
+    
+    <!-- About Us Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="lead text-center">Sarah Glass Ceramics is a women-led ceramics studio in Fort Lauderdale. Our mission is to provide a welcoming and supportive environment for people of all skill levels to explore the art of ceramics. We are happy to offer space and equipment to help you unleash your inner artist.</p>
+        <div class="text-center">
+            <a href="#" class="btn learn-more-btn" style="background-color: transparent; color: #007bff; border: none;">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Featured Classes Section -->
+    <section id="projects" class="container py-5">
+        <h2 class="text-center mb-4">Featured Classes, Courses & Workshops</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/ceramica-img1.jpg" class="card-img-top" alt="Class 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceramic Vase</h5>
+                        <p class="card-text">Ceramic glazing experience.</p>
+                        <p class="card-text text-muted">$95.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/ceramica-img3.jpg" class="card-img-top" alt="Class 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceramic Sculpture</h5>
+                        <p class="card-text">Hand modeling experience.</p>
+                        <p class="card-text text-muted">$120.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/ceramica-img2.jpg" class="card-img-top" alt="Class 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pottery Workshop</h5>
+                        <p class="card-text">Advanced ceramics course.</p>
+                        <p class="card-text text-muted">$85.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contact</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p class="mb-0">Location: Fort Lauderdale, FL</p>
+            <p class="mb-0">Follow us on social media:</p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="mx-2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="mx-2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón "Volver Arriba" -->
+    <button id="scroll-to-top" class="d-none"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Archivos JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #1e1e2f;
+    color: #d1d1e0;
+}
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s;
+}
+
+.navbar a {
+    transition: color 0.3s;
+}
+
+body.dark .navbar {
+    background-color: #2a2734;
+}
+
+body.dark .navbar a {
+    color: #d1d1e0;
+}
+
+/* Hero Section */
+#hero {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.dark #hero {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Titles */
+h2 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+body.dark h2 {
+    color: #ffdb70;
+}
+
+/* Text */
+p {
+    color: #555;
+    transition: color 0.3s;
+}
+
+body.dark p {
+    color: #d1d1e0;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.learn-more-btn:hover {
+    color: #0057b3e5;
+    text-decoration: underline;
+}
+
+body.dark .learn-more-btn {
+    color: #ffdb70;
+}
+
+body.dark .learn-more-btn:hover {
+    color: #ffd166;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+body.dark footer {
+    background-color: #2a2734;
+    color: #d1d1e0;
+}
+
+body.dark footer a {
+    color: #ffdb70;
+}
+
+body.dark footer a:hover {
+    color: #ffd166;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+body.dark .card {
+    background-color: #2a2734;
+    color: #d1d1e0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+body.dark .card-title {
+    color: #ffdb70;
+}
+
+.card-text {
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+body.dark .card-text {
+    color: #d1d1e0;
+}
+
+/* Scroll to Top Button */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+body.dark #scroll-to-top {
+    background-color: #ffdb70;
+    color: #2a2734;
+}
+
+body.dark #scroll-to-top:hover {
+    background-color: #ffd166;
+}
+
+/* Dark Mode Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #ffdb70;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #ffdb70;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .vertical-text {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-icons {
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
